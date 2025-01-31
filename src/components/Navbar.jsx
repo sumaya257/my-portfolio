@@ -43,8 +43,8 @@ const Navbar = () => {
                 duration={500}
                 onClick={() => setActive("home")}
                 className={`flex items-center text-lg font-medium ${active === "home"
-                    ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                    : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
                   }`}
               >
                 <FaHome className="w-5 h-5 mr-2" />
@@ -58,8 +58,8 @@ const Navbar = () => {
                 duration={500}
                 onClick={() => setActive("about")}
                 className={`flex items-center text-lg font-medium ${active === "about"
-                    ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                    : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
                   }`}
               >
                 <FontAwesomeIcon
@@ -76,8 +76,8 @@ const Navbar = () => {
                 duration={500}
                 onClick={() => setActive("skill")}
                 className={`flex items-center text-lg font-medium ${active === "skill"
-                    ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                    : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
                   }`}
               >
                 <FaLaptopCode className="w-5 h-5 mr-2" /> {/* Skill Icon */}
@@ -91,8 +91,8 @@ const Navbar = () => {
                 duration={500}
                 onClick={() => setActive("education")}
                 className={`flex items-center text-lg font-medium ${active === "education"
-                    ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                    : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
                   }`}
               >
                 <FaGraduationCap className="w-5 h-5 mr-2" /> {/* Education Icon */}
@@ -106,8 +106,8 @@ const Navbar = () => {
                 duration={500}
                 onClick={() => setActive("contact")}
                 className={`flex items-center text-lg font-medium ${active === "contact"
-                    ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                    : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
                   }`}
               >
                 <FaPhoneAlt className="w-5 h-5 mr-2" /> {/* Contact Icon */}
@@ -117,12 +117,10 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <a className="relative flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#FF6F61] via-[#6B5B95] to-[#F7CAC9] text-white font-bold text-2xl rounded-full shadow-lg hover:scale-105 hover:bg-gradient-to-r hover:from-[#6B5B95] hover:to-[#FF6F61] transition-all duration-300 sixtyfour-font">
-          ST
-          <span className="absolute top-0 left-10 bg-[#2E4053] text-white text-xs font-semibold rounded-full px-2 py-[2px] shadow-md shadow-[#2E4053]">
-            Dev
-          </span>
-        </a>
+        <Link to='home' smooth={true}
+          duration={500} className="w-16 h-16 rounded-full shadow-lg hover:scale-125 transition-all duration-300">
+          <img src="https://i.ibb.co.com/hRBYCZkX/S-logo-circle.png" alt="logo" />
+        </Link>
       </div>
 
       {/* Navbar Center */}
@@ -135,8 +133,8 @@ const Navbar = () => {
               duration={500}
               onClick={() => setActive("home")}
               className={`flex items-center text-lg font-medium ${active === "home"
-                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
                 }`}
             >
               <FaHome className="w-5 h-5 mr-2" />
@@ -150,8 +148,8 @@ const Navbar = () => {
               duration={500}
               onClick={() => setActive("about")}
               className={`flex items-center text-lg font-medium ${active === "about"
-                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
                 }`}
             >
               <FontAwesomeIcon
@@ -168,8 +166,8 @@ const Navbar = () => {
               duration={500}
               onClick={() => setActive("skill")}
               className={`flex items-center text-lg font-medium ${active === "skill"
-                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
                 }`}
             >
               <FaLaptopCode className="w-5 h-5 mr-2" /> {/* Skill Icon */}
@@ -183,8 +181,8 @@ const Navbar = () => {
               duration={500}
               onClick={() => setActive("education")}
               className={`flex items-center text-lg font-medium ${active === "education"
-                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
                 }`}
             >
               <FaGraduationCap className="w-5 h-5 mr-2" /> {/* Education Icon */}
@@ -198,8 +196,8 @@ const Navbar = () => {
               duration={500}
               onClick={() => setActive("contact")}
               className={`flex items-center text-lg font-medium ${active === "contact"
-                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
-                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
                 }`}
             >
               <FaPhoneAlt className="w-5 h-5 mr-2" /> {/* Contact Icon */}
