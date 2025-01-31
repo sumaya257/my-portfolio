@@ -1,0 +1,26 @@
+/* Add this to your global CSS file (index.css or App.css) */
+.sixtyfour-font {
+  font-family: "Sixtyfour", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+
+@keyframes color-change {
+  0% {
+    color: #6B5B95;
+  }
+  50% {
+    color: #FF6F61;
+  }
+  100% {
+    color: #6B5B95;
+  }
+}
+
+.animate-color-change {
+  animation: color-change 3s infinite ease-in-out;
+}
+
+
