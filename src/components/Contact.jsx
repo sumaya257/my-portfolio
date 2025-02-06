@@ -73,16 +73,20 @@ const Contact = () => {
             <span className="text-lg">Dhaka, Bangladesh</span>
           </div>
           <div className="flex items-center">
-            <FaEnvelope className="text-[#6B5B95] mr-4" />
-            <span className="text-lg">sumayaece19@gmail.com</span>
-          </div>
-          <div className="flex items-center">
             <FaPhoneAlt className="text-[#6B5B95] mr-4" />
             <span className="text-lg">+8801717521838</span>
           </div>
           <div className="flex items-center">
+            <FaEnvelope className="text-[#6B5B95] mr-4" />
+            <a href="mailto:sumayaece19@gmail.com" target="_blank">
+            <span className="text-lg underline decoration-[#6B5B95]">Email/sumaya</span>
+            </a>
+          </div>
+          <div className="flex items-center">
             <FaWhatsapp className="text-[#6B5B95] mr-4" />
-            <span className="text-lg">+8801717521838</span>
+            <a href="https://wa.me/+8801717521838" target="_blank">
+            <span className="text-lg underline decoration-[#6B5B95]">WhatsApp/sumaya</span>
+            </a>
           </div>
           <div className="flex items-center">
             <FaLinkedin className="text-[#6B5B95] mr-4" />

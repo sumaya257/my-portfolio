@@ -28,17 +28,6 @@ const AboutMe = () => {
     <section id="about" className="flex flex-col lg:flex-row items-center justify-between py-10 lg:px-24 md:px-24 px-10 mt-16 shadow-[#F7CAC9] shadow-lg">
       {/* Left side - Lottie Animation */}
       <motion.div
-        className="lg:w-1/2 mb-8 lg:mb-0 flex justify-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }} // Trigger when scrolling into view
-        variants={textVariant}
-      >
-        <Lottie options={lottieOptions} height={300} width={300} />
-      </motion.div>
-
-      {/* Right side - Text */}
-      <motion.div
         className="lg:w-1/2 text-center lg:text-left"
         initial="hidden"
         whileInView="visible"
@@ -53,6 +42,17 @@ const AboutMe = () => {
           
           Besides coding, I enjoy cooking. I believe in continuous learning and excited to enrich myself in the field of web development in the future.
         </p>
+      </motion.div>
+
+      {/* Right side - Text */}
+      <motion.div
+        className="lg:w-1/2 mb-8 lg:mb-0 flex justify-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }} // Trigger when scrolling into view
+        variants={textVariant}
+      >
+        <Lottie options={lottieOptions} height={300} width={300} />
       </motion.div>
     </section>
   );

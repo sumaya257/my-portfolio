@@ -49,14 +49,14 @@ const Banner = () => {
     ];
 
     return (
-        <div id="home" className="relative mt-5 border-2 border-[#F7CAC9] dark:border-[#1d232a] shadow-[#F7CAC9]  rounded-lg shadow-lg py-16 px-32 flex flex-col lg:flex-row items-center lg:justify-between gap-4">
+        <div id="home" className="relative mt-5 border-2 border-[#F7CAC9] dark:border-[#1d232a] shadow-[#F7CAC9]  rounded-lg shadow-lg py-10 px-10  md:px-24  flex flex-col lg:flex-row items-center lg:justify-between gap-4">
             {/* Left Side Content */}
             <div className="flex flex-col items-start text-left space-y-8 max-w-lg">
                 <h1 className="text-xl font-semibold text-[#2E4053]">
                     👋 <span className="text-[#FF6F61]">Hey there!</span>
                 </h1>
                 <motion.h2
-                    className="text-4xl font-bold text-[#6B5B95] whitespace-nowrap border-r-2 border-[#FF6F61] mb-2"
+                    className="text-4xl font-bold text-[#6B5B95] md:whitespace-nowrap border-r-2 border-[#FF6F61] mb-2"
                     variants={textVariant}
                     initial="hidden"
                     animate="visible"
@@ -94,7 +94,7 @@ const Banner = () => {
                         variants={{
                             visible: {
                                 transition: {
-                                    staggerChildren: 1.5, // Stagger each skill animation by 1.5 seconds
+                                    staggerChildren: 1, // Stagger each skill animation by 1.5 seconds
                                     repeat: Infinity,
                                     repeatType: "loop",
                                 },
@@ -122,9 +122,9 @@ const Banner = () => {
                 <div className="flex gap-4">
                     {/* Download Resume Button */}
                     <motion.a
-                        href="https://drive.google.com/file/d/1i0brgpDKIxEl9VVlyeYF6sMA8U6JStW8/view?usp=sharing" // Replace with the actual path to your resume
+                        href="https://drive.google.com/file/d/1nOv--zbjkBkNJ639svM5zwK4nT_32ZHi/view?usp=sharing" // my resume
                         download
-                        className="inline-block px-6 py-3 bg-[#FF6F61] text-white text-lg font-semibold rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 hover:bg-gradient-to-l hover:from-[#FF6F61] hover:to-[#6B5B95]"
+                        className="px-6 py-3 bg-[#FF6F61] text-white md:text-lg font-semibold rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 hover:bg-gradient-to-l hover:from-[#FF6F61] hover:to-[#6B5B95]"
                         target="_blank"
                         variants={fadeVariant}
                         initial="hidden"

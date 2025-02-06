@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard } from '@fortawesome/free-regular-svg-icons';
-import { FaHome, FaGraduationCap, FaLaptopCode, FaPhoneAlt } from 'react-icons/fa'; // Adding icons for other sections
+import { FaHome, FaGraduationCap, FaLaptopCode, FaPhoneAlt, FaIndustry } from 'react-icons/fa'; // Adding icons for other sections
 import { Link } from 'react-scroll'; // For smooth scroll functionality
 import { MdOutlineDarkMode } from "react-icons/md";
 import { useTheme } from '../provider/ThemeContext';
@@ -101,6 +101,21 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                to="experience"
+                smooth={true}
+                duration={500}
+                onClick={() => setActive("experience")}
+                className={`flex items-center text-lg font-medium ${active === "experience"
+                  ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                  : "text-[#6B5B95] hover:text-[#FF6F61]"
+                  }`}
+              >
+                <FaIndustry  className="w-5 h-5 mr-2" /> {/* Education Icon */}
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="contact"
                 smooth={true}
                 duration={500}
@@ -191,6 +206,21 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              onClick={() => setActive("experience")}
+              className={`flex items-center text-lg font-medium ${active === "experience"
+                ? "text-[#FF6F61] bg-[#F7CAC9] rounded-lg"
+                : "text-[#6B5B95] hover:text-[#FF6F61]"
+                }`}
+            >
+              <FaIndustry  className="w-5 h-5 mr-2" /> {/* Education Icon */}
+              Experience
+            </Link>
+          </li>
+          <li>
+            <Link
               to="contact"
               smooth={true}
               duration={500}
@@ -218,9 +248,9 @@ const Navbar = () => {
           <MdOutlineDarkMode size={24} />
         </button>
         <a
-          href="https://drive.google.com/file/d/1i0brgpDKIxEl9VVlyeYF6sMA8U6JStW8/view?usp=sharing" //resume
+          href="https://drive.google.com/file/d/1nOv--zbjkBkNJ639svM5zwK4nT_32ZHi/view?usp=sharing" //resume
           download
-          className="inline-block px-6 py-3 bg-[#6B5B95] text-white text-lg font-semibold rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 hover:bg-gradient-to-l hover:from-[#FF6F61] hover:to-[#6B5B95]"
+          className="inline-block px-6 py-3 lg:py-4 bg-[#6B5B95] text-white text-base font-semibold rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 hover:bg-gradient-to-l hover:from-[#FF6F61] hover:to-[#6B5B95]"
           target="_blank"
         >
           Download Resume
