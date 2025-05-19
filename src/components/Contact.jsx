@@ -44,13 +44,13 @@ const Contact = () => {
           {/* Name Field */}
           <div>
             <label htmlFor="name" className="block text-lg font-medium text-[#2E4053] mb-2">Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Enter your name" className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-[#6B5B95] focus:outline-none" required />
+            <input type="text" id="name"  name="from_name"  placeholder="Enter your name" className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-[#6B5B95] focus:outline-none" required />
           </div>
 
           {/* Email Field */}
           <div>
             <label htmlFor="email" className="block text-lg font-medium text-[#2E4053] mb-2">Email</label>
-            <input type="email" id="email" name="user_email" placeholder="Enter your email" className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-[#6B5B95] focus:outline-none" required />
+            <input type="email" id="email"  name="reply_to" placeholder="Enter your email" className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-[#6B5B95] focus:outline-none" required />
           </div>
 
           {/* Message Field */}
